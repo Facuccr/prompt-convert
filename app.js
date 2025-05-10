@@ -28,10 +28,12 @@ function menu() {
             1. Divisa (ARS -> USD)
             2. Salir`
         );
-
-
-        
+         switch (opcion) {
+            case "1": convertir(); break;
+            case "2": 
+                console.log("Historial completo:", historial); 
+                break;
+            default: alert("Opción no válida");
+        }
     }while(opcion !== "2");
-
-
 }menu();
